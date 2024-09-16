@@ -61,7 +61,7 @@
             if(options.icon.slice(0,options.prefix.length+1) === options.prefix + "-") {
                 iconClass = options.icon;
             } else {
-                iconClass = options.prefix + "-" + options.icon;
+                iconClass = (options.prefix === 'fas' ? 'fa' : options.prefix) + "-" + options.icon;
             }
 
             if(options.spin && typeof options.spinClass === "string") {
